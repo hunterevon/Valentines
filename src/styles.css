@@ -19,34 +19,49 @@ body {
   margin: 0;
   padding: 2rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   min-height: 100vh;
 }
 .app {
   max-width: 700px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-header h1 {
-  margin: 0 0 1rem;
-  font-size: 2rem;
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
 }
-.heart {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
+
+.maindiv {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  max-width: 90%;
 }
-.heart-shape {
-  font-size: 6rem;
-  transition: transform 0.25s ease;
+
+.buttons {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
-.heart.open .heart-shape {
-  transform: scale(1.15) rotate(-10deg);
-}
-.message {
-  margin-top: 1rem;
-  font-size: 1.25rem;
-  color: var(--accent);
+
+.header {
+  font-size: 30px;
+  align-content: flex-start;
+  margin: auto;
 }
 .yes {
   display: flex;
@@ -59,4 +74,19 @@ header h1 {
   justify-content: center;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+.buttons button {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.heath {
+  width: 600px;
+  height: auto;
+  display: block;
 }

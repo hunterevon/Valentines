@@ -1,15 +1,19 @@
 import React from "react";
-import Heart from "./components/Heart";
 
 export default function App() {
   return (
     <div className="app">
-      <header>
+      <header className="header">
         <h1>Will you be my Valentine?</h1>
       </header>
-      <main>
-        <button>YES</button>
-        <button>NO</button>
+      <main className="main">
+        <img src="/heath.jpeg" alt="photo" className="heath" />
+        <div className="maindiv">
+          <div className="buttons">
+            <button className="yes">YES</button>
+            <button className="no">NO</button>
+          </div>
+        </div>
       </main>
     </div>
   );
