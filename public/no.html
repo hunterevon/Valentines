@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maybe Next Time</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background: #fff0f6;
+        color: #333;
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial;
+      }
+      .card {
+        max-width: 720px;
+        padding: 2rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+
+      .fine {
+        border: 1px solid black;
+        border-radius: 100px;
+      }
+      h1 {
+        margin: 0 0 1rem;
+        color: #ff6b81;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>OUCH 😢</h1>
+      <p>I can't believe you said no to me....</p>
+      <button class="fine">Im joking, you're the best Hunter</button>
+    </div>
+    <script>
+      // navigate to /fine.html when the .fine button is clicked
+      document.addEventListener('DOMContentLoaded', function () {
+        const btn = document.querySelector('.fine');
+        if (btn) btn.addEventListener('click', () => { window.location.href = '/fine.html'; });
+      });
+    </script>
+  </body>
+</html>

@@ -76,6 +76,42 @@ body {
   border-radius: 5px;
 }
 
+/* floating YES button transition */
+.yes[style] {
+  transition:
+    left 600ms ease,
+    top 600ms ease,
+    transform 300ms ease;
+}
+
+/* NO fullscreen state */
+.no.fullscreen {
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 80vw !important;
+  height: 80vh !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.6rem !important;
+  z-index: 2000 !important;
+  transition:
+    width 800ms ease,
+    height 800ms ease,
+    transform 800ms ease,
+    left 800ms ease,
+    top 800ms ease;
+}
+
+/* ensure NO transitions smoothly as it scales */
+.no {
+  transition: transform 700ms ease;
+}
+
 .buttons button {
   flex: 1 1 0;
   min-width: 0;
