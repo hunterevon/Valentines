@@ -47,12 +47,12 @@
       <button class="fine">Im joking, you're the best Hunter</button>
     </div>
     <script>
-      // navigate to /fine.html when the .fine button is clicked
-      document.addEventListener("DOMContentLoaded", function () {
-        const btn = document.querySelector(".fine");
-        if (btn)
-          btn.addEventListener("click", () => {
-            window.location.href = "/fine.html";
+      // navigate to fine.html (relative) when the .fine button is clicked
+      document.addEventListener('DOMContentLoaded', function () {
+        const btn = document.querySelector('.fine');
+        if (btn) btn.addEventListener('click', () => { window.location.href = 'fine.html'; });
+      });
+    </script>
           });
       });
     </script>
