@@ -1,7 +1,7 @@
 {
   "name": "valentines-frontend",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://hunterevon.github.io/Valentines",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
